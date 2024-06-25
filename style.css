@@ -5,30 +5,12 @@ body {
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
-
     background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWpwc3pmdWM0emJ1NTZmc3BlNWdmdDdyM21xNjRzcmVhNXdueWd1ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEjHZzPiemz0hjtdK/giphy.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
-    
+    background-size: cover;    
 }
-
-
-/*.hero {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: fixed;
-}
-
-.video-bg {
-    position: absolute;
-    top:0;
-    left:0;
-    min-width: 100%;
-    min-height: 100%;
-}*/
 
 section {
     display: grid;
@@ -44,20 +26,15 @@ section {
     transition: all 1s;
 }
 
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
-
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
 
-.logos {
-    display: flex
+.logo {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logo:nth-child(2) {
@@ -72,6 +49,9 @@ section {
     transition-delay: 600ms;
 }
 
-.bob {
-    display: flex
+img {
+    flex: 1 450px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
 }
