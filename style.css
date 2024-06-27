@@ -11,7 +11,21 @@ body {
     background-attachment: fixed;
     background-size: cover;    
 }
-
+#container{
+    display: flex;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    position: absolute;
+    background: hsl(207, 93%, 43%);
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+}
 section {
     display: grid;
     place-items: center;
